@@ -44,10 +44,10 @@ def main():
         if input_state == False:
             play_mp3(mp3)
             logging.info("Button Pressed")
-            #picture = utils.take_pic()
-            #logging.info("Picture Taken")
-            #utils.send_text("Someone is at the door Door DOOR", picture, recipients)
-            #logging.info("Text Sent")
+            picture = utils.take_pic()
+            logging.info("Picture Taken")
+            utils.send_text("Someone is at the door Door DOOR", picture, recipients)
+            logging.info("Text Sent")
             time.sleep(0.5)
     browser.stop_discovery()
 
